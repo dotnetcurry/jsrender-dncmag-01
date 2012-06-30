@@ -1,0 +1,119 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">JsRender</a></p>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>
+                    Client Side Templates using jsRender</h1>
+            </hgroup>
+            <p>
+                ASP.NET Web API allows you to expose your applications, data and services to the
+                web directly over HTTP.
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <div>
+        <div>
+                <a href="/CanvasChart.htm">HTML5 Canvas Demo</a></div>
+            <div>
+                <button id="addNew" value="Click to Add a Contact">
+                    Click to Add a Contact
+                </button>
+            </div>
+        </div>
+        <div style="border: 1px solid gray; text-align: left">
+            <div style="border: 1px solid #FEFEFE; text-align: left; padding: 10px">
+                <h2>
+                    Contact List</h2>
+            </div>
+            <div id="contactListContainer" style="display: inline-block;">
+            </div>
+            <script id="contactListTemplate" src="~/Scripts/jsrender.js" type="text/x-jsrender">
+                <div style="display:inline-block; 
+                    border: 1px solid #F0F0F0; margin-bottom:5px;
+                            padding:10px; width:400px;">
+                    <div style="display:inline-block">
+                        {{if Gravatar}}
+                        <img src='{{:Gravatar}}' alt='Gravatar' />
+                        {{/if}}
+                    </div>
+                    <div>Name: {{:Name}}</div>
+                    <div>Email:  {{:Email}}</div>
+                    
+                    <div>Address: 
+                    <div style="padding:5px">
+                        <div> {{:Address.Line1}} </div>
+                        <div> {{:Address.Line2}} </div>
+                        <div> {{:Address.City}} </div>
+                        <div> {{:Address.State}} </div>
+                        <div> {{:Address.Zip}} </div>
+                    </div>
+                    </div>
+                </div>
+            </script>
+        </div>
+        <div id="addContactPopup" style="text-align: left; display: none">
+            <div style="padding: 2px">
+                <div style="width: 80px; display: inline-block">
+                    Name</div>
+                <div style="display: inline-block">
+                    <input type="text" name="nameText" id="nameText" value=" " />
+                </div>
+            </div>
+            <div style="padding: 2px">
+                <div style="width: 80px; display: inline-block">
+                    Email</div>
+                <div style="display: inline-block">
+                    <input type="text" name="emailText" id="emailText" value=" " />
+                </div>
+            </div>
+            <div>
+                <div style="padding: 10px">
+                    <div style="display: inline-block; width: 200px">
+                        Address
+                    </div>
+                    <div style="padding-left: 10px">
+                        <div style="padding: 2px">
+                            <div style="display: inline-block; width: 60px">
+                                Line 1
+                            </div>
+                            <input type="text" name="Line1" id="Line1" value=" " />
+                        </div>
+                        <div style="display: inline-block;">
+                            <div style="display: inline-block; width: 60px">
+                                Line 2
+                            </div>
+                            <input type="text" name="Line2" id="Line2" value=" " />
+                        </div>
+                        <div style="display: inline-block;">
+                            <div style="display: inline-block; width: 60px">
+                                City
+                            </div>
+                            <input type="text" name="City" id="City" value=" " />
+                        </div>
+                        <div style="display: inline-block;">
+                            <div style="display: inline-block; width: 60px">
+                                State
+                            </div>
+                            <input type="text" name="state" id="State" value=" " />
+                        </div>
+                        <div style="display: inline-block;">
+                            <div style="display: inline-block; width: 60px">
+                                Zip
+                            </div>
+                            <input type="text" name="zip" id="Zip" value=" " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
