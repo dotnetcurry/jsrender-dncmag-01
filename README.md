@@ -10,10 +10,14 @@ The source code has been explained in the DNC Magazine, Issue 01. This magazine 
 [DNC Magazine, Issue 01](http://www.dotnetcurry.com/magazine/dnc-magazine-issue1.aspx)
 
 * Author: Minal Agarwal
-* Twitter: [saffronstroke](http://www.twitter.com/sumitkm)
+* Twitter: [@saffronstroke](http://www.twitter.com/sumitkm)
 * Date: July, 2012
 * Version: 0.0.1
 * Website: [DNC Magazine](http://www.dotnetcurry.com/magazine/)
 * GitHub: [DNC Magazine on Github](https://github.com/dotnetcurry/chirpyr-dncmag01/)
+* Demo: http://jsrendercontactlist.apphb.com/
+
+BUILD NOTES:
+The 'references' folder was added to work around a build issue related to MVC4 RC. Ideally nuget-package-restore should be able to get the dependencies for you.
 
 

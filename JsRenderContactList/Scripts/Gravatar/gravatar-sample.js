@@ -6,7 +6,7 @@ $(function () {
     $("#addContactPopup").hide();
     var addList = [{
         "Name": "Minal Agarwal",
-        "Email": "minalsagarwal@gmail.com",
+        "Email": "minalsagarwal@isobfuscated.com",
         "Gravatar": "http://www.gravatar.com/avatar/8a00acdf326a8a8806ccc662a136c438.jpg",
         "Address": {
             "Line1": "1234",
@@ -25,6 +25,18 @@ $(function () {
             "Line2": "Obfuscated Lane",
             "City": "Nice City",
             "State": "Maharashtra",
+            "Zip": "411000"
+        }
+    },
+    {
+        "Name": "Sumit Maitra",
+        "Email": "sumitkm@isobfuscated.com",
+        "Gravatar": "http://www.gravatar.com/avatar/147bacafcdb00d67d3336ecdf4078ba5.jpg",
+        "Address": {
+            "Line1": "Far Far Away",
+            "Line2": "",
+            "City": "City",
+            "State": "MH",
             "Zip": "411000"
         }
     }];
